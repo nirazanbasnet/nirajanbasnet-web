@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home | Nirajan Basnet</title>
+  <meta name="description" content="Personal Portfolio Website" />
+  <meta name="keywords" content="Frontend developer, Personal Portfolio, Design, Blogs, Coding, Creative" />
+  <meta name="author" content="Nirajan Basnet" />
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Nunito:wght@600&&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function () {
+      var e,
+        t = document.createElement("style");
+      return (
+        (t.innerHTML = "root: { --tmp-var: bold; }"),
+        document.head.appendChild(t),
+        (e = !!(
+          window.CSS &&
+          window.CSS.supports &&
+          window.CSS.supports("font-weight", "var(--tmp-var)")
+        )),
+        t.parentNode.removeChild(t),
+        e
+      );
+    };
+    supportsCssVars() ||
+      alert(
+        "Please view this demo in a modern browser that supports CSS Variables."
+      );
+  </script>
+</head>
+
+<body class="demo-1">
+  <main>
+    <div class="frame">
+      <div class="frame__title-wrap">
+        <h2 class="frame__title">NirajanBasnet.</h2>
+      </div>
+    </div>
+    <div class="content">
+      <!-- the content -->
+      <header>
+        <button class="menu-button" data-btn="menu" aria-label="menu">
+          <span class="menu-button__icon">
+            <span></span>
+          </span>
+        </button>
+        <nav class="menu" data-menu>
+          <ul>
+            <li>
+              <a href="">About me</a>
+            </li>
+            <li>
+              <a href="">Projects</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="wrapper">
+        <div class="hero hero--primary">
+          <div class="container">
+            <h1 class="hero__heading" data-splitting>
+              Hi, I'm Nirajan
+            </h1>
+            <p class="sub-heading" data-splitting>I build Websites</p>
+          </div>
+        </div>
+
+        <div class="hero hero--secondary" aria-hidden="true" data-hero>
+          <div class="container">
+            <p class="hero__heading" data-splitting>
+              Hi, I'm Nirajan
+            </p>
+            <p class="sub-heading" data-splitting>I build Websites</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
